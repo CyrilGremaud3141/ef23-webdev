@@ -50,7 +50,49 @@
 		}
 
 		.boxmodel, .chichenitza {width: 260px;}
+		.pyramid{
+			width: 260px; height: 260px;
+			background-color: lightgray;
+		}
+		.pyramid.edge{
+			margin: 1px;
+			height:100%;
+			width: auto;
+			background-color: grey;
+			border: 4px solid lightgrey;
+		}
+		.pyramid.part{
+			padding: 14px;
+			height:100%;
+			width: auto;
+			background-color: rgb(158, 158, 158);
+			border: 3px solid white;
+		}
+		.pyramid.inner{
+			height:100%;
+			width: auto;
+			background-color: rgb(158, 158, 158);
+			border: 3px solid white;
+		}
 
+
+		.tex{
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			font-size: 12px;
+			text-align: center;
+			margin-top: 15px;
+			line-height: 1.8em;
+		}
+		.tex.red{
+			color:rgb(141, 38, 38);
+			font-weight: bold;
+			font-style: italic;
+		}
+		.tex.white{
+			color:rgb(255, 255, 255);
+			font-weight: bold;
+			text-decoration: underline;
+		}
 	</style>
 </head>
 <body>
@@ -97,6 +139,29 @@
 		<h2>Exercice</h2>
 		<div>Mimic the following structure using HTML and CSS.</div>
 		<div><img class="chichenitza" src="img/chichenitza.png"></div>
+
+
+
+		<div class="pyramid">
+			<div class="pyramid edge">
+				<div class="pyramid part">
+					<div class="pyramid part">
+						<div class="pyramid part">
+							<div class="pyramid part">
+								<div class="pyramid inner">
+									<div class="tex">Web<br>developers<br><span class="tex red">love</span> the <span class="tex white">Chichén Itza</span>.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		
+
+
 
 		<h2>More resources</h2>
 		<ul>
