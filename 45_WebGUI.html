@@ -25,6 +25,17 @@
 	</div>
 
 
+	<div class="average">
+		<h2>Calculate Average</h2>
+		<div>
+			<input class="nums" placeholder="Numbers (x,y,z...)" type="text">
+			<button>Calculate</button>
+			<div class="output">&nbsp;</div>
+		</div>
+	</div>
+
+	
+
 	<script>
 
 		const hypotenuseButton = document.querySelector(".hypotenuse button")
@@ -39,6 +50,17 @@
 			hypotenuseOutput.textContent = c
 		}
 
+
+		const averageButton = document.querySelector(".average button")
+		const averageOutput = document.querySelector(".average .output")
+
+		averageButton.addEventListener("click", showaverage)
+
+		function showaverage() {
+			const ns = document.querySelector(".average input.nums").value.split(",")
+			const avg = getAverage(ns)
+			averageOutput.textContent = avg
+		}
 
 	</script>
 </body>

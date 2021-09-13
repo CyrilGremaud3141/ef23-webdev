@@ -28,14 +28,13 @@ const endOfTitle = "<h1>Welcome</h1>".indexOf("</")
 const subtitle = "<h1>Welcome</h1>".replaceAll("h1", "h2")
 
 
-
 //*******************************************************/
 // Numbers
 //*******************************************************/
 
 let sum = 0
 const d = 8
-const PI = 3.1415926535
+const PI = 3.1415926535897932384626433832795028841971693993751050288
 const temperature = 23.5
 const c = 3e8
 let x = 3
